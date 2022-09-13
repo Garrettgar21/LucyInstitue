@@ -1,4 +1,4 @@
 const variables={
-    API_URL:"http://localhost:49146/api/",
-    PHOTO_URL:"http://localhost:49146/photos/"
+    API_URL:"http://127.0.0.1:8000/",
+    PHOTO_URL:"http://127.0.0.1:8000/Photos/"
 }

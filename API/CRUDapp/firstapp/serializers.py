@@ -4,7 +4,7 @@ from firstapp.models import ImgurModel,User
 class ImgurModelSerializer(serializers.ModelSerializer):
     class Meta:
         model=ImgurModel 
-        fields=('ImageId','ImageName','ImageDescription','ImageURL')
+        fields=('ImageId','ImageName','ImageDescription','ImageURL','ImageFav')
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:

@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'CRUDapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'firstdb',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
+        'NAME': 'notredame',
+        'USER': 'garlau',
+        'PASSWORD': 'Qwertyuiop123!',
+        'HOST': 'notredame.postgres.database.azure.com',
         'PORT': '5432'
     }
 }
