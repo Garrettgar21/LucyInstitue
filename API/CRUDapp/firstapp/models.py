@@ -10,6 +10,6 @@ class ImgurModel(models.Model):
     ImageFav = models.BooleanField(default=False)
 
 class User(models.Model):
-    UserId = models.AutoField
+    UserId = models.AutoField(primary_key=True)
     UserUsername = models.CharField(max_length=100)
     UserPassword = models.CharField(max_length=100)

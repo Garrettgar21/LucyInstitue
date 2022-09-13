@@ -5,6 +5,9 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns=[
-    url(r'^imagurmodel$',views.firstappApi),
-    url(r'^imagurmodel/([0-9]+)$',views.firstappApi)
+    url(r'^imgurmodel$', views.imgurmodelApi),
+    url(r'^imgurmodel/([0-9]+)$', views.imgurmodelApi),
+
+    url(r'^user$', views.userApi),
+    url(r'^user/([0-9]+)$', views.userApi)
 ]
