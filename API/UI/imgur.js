@@ -1,0 +1,1 @@
+const imgur={template:`<h1>This is Imgur</h1>`}
