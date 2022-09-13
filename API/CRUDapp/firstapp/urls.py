@@ -9,5 +9,7 @@ urlpatterns=[
     url(r'^imgurmodel/([0-9]+)$', views.imgurmodelApi),
 
     url(r'^user$', views.userApi),
-    url(r'^user/([0-9]+)$', views.userApi)
-]
+    url(r'^user/([0-9]+)$', views.userApi),
+
+    url(r'^imgurmodel/savefile',views.SaveFile)
+]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
