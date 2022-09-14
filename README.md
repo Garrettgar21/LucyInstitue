@@ -18,7 +18,7 @@ virtualenv==20.16.5
 
 Running 'pip freeze' will reveal all the used packages, however, since this was from my home computer there were multiples of packages that were not used. The ones listed above were the main ones need in the python backend.
 
-# To Run the code
+# To Run The Code
 
 You need the packages above. They will also be in the requirements.txt file. You need to run 'python manage.py migrate'. I already created the migration files and now we just need to run the migrations. Then you need to run 'python manage.py runserver'. After that, you can use the HTML file to navigate the VueJS files I created.
 
