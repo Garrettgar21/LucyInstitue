@@ -83,9 +83,21 @@ data-bs-target="#exampleModal"
                 <span class="input-group-text">Username</span>
                 <input type="text" class="form-control" v-model="UserUsername">
             </div>
-                    <div class="input-group mb-3">
+                <div class="input-group mb-3">
                 <span class="input-group-text">Password</span>
                 <input type="text" class="form-control" v-model="UserPassword">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">ClientID</span>
+                <input type="text" class="form-control" v-model="ClientID">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Client Secret</span>
+                <input type="text" class="form-control" v-model="ClientSecret">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Refresh Token</span>
+                <input type="text" class="form-control" v-model="RefreshToken">
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text">DOJ</span>
@@ -124,6 +136,9 @@ data(){
         Username:"",
         UserUsername:"",
         UserPassword:"",
+        ClientID:"",
+        ClientSecret:"",
+        RefreshToken:"",
         DateOfJoining:""
     }
 },
@@ -140,6 +155,9 @@ methods:{
         this.Username="";
         this.UserUsername="";
         this.UserPassword="";
+        this.ClientID="";
+        this.ClientSecret="";
+        this.RefreshToken="";
         this.DateOfJoining="";
     },
     editClick(use){
@@ -148,6 +166,9 @@ methods:{
         this.Username=use.Username;
         this.UserUsername=use.UserUsername;
         this.UserPassword=use.UserPassword;
+        this.ClientID=use.ClientID;
+        this.ClientSecret=use.ClientSecret;
+        this.RefreshToken=use.RefreshToken;
         this.DateOfJoining=use.DateOfJoining
     },
     createClick(){
@@ -156,6 +177,9 @@ methods:{
             Username:this.Username,
             UserUsername:this.UserUsername,
             UserPassword:this.UserPassword,
+            ClientID:this.ClientID,
+            ClientSecret:this.ClientSecret,
+            RefreshToken:this.RefreshToken,
             DateOfJoining:this.DateOfJoining
         })
         .then((response)=>{
@@ -169,6 +193,9 @@ methods:{
             Username:this.Username,
             UserUsername:this.UserUsername,
             UserPassword:this.UserPassword,
+            ClientID:this.ClientID,
+            ClientSecret:this.ClientSecret,
+            RefreshToken:this.RefreshToken,
             DateOfJoining:this.DateOfJoining
         })
         .then((response)=>{

@@ -1,3 +1,4 @@
+from pyexpat import model
 from django.db import models
 
 # Create your models here.
@@ -14,4 +15,7 @@ class User(models.Model):
     Username = models.CharField(max_length=100)
     UserUsername = models.CharField(max_length=100)
     UserPassword = models.CharField(max_length=100)
+    ClientID = models.CharField(max_length=100)
+    ClientSecret = models.CharField(max_length=100)
+    RefreshToken = models.CharField(max_length=100)
     DateOfJoining = models.DateField()

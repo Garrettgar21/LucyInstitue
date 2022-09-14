@@ -9,4 +9,4 @@ class ImgurModelSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model=User
-        fields=('UserId','Username','UserUsername','UserPassword','DateOfJoining')
+        fields=('UserId','Username','UserUsername','UserPassword','ClientID','ClientSecret','RefreshToken','DateOfJoining')
