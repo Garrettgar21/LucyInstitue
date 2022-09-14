@@ -1,7 +1,7 @@
 # LucyInstitue
 building a simple CRUD app using VueJS and the Imgur API.
 
-This uses a Django back-end connected to my Azure DB in the Settings.py file.
+This uses a Django back-end connected to my Azure DB in the Settings.py file with VueJs as the frontend.
 
 # Required Packages
 Django==3.2.15
@@ -16,7 +16,7 @@ requests==2.22.0
 
 virtualenv==20.16.5
 
-Running 'pip freeze' will reveal all the used packages, however, since this was from my home computer there are number packages that were not used. The ones listed above were the main ones need in the python backend.
+Running 'pip freeze' will reveal all the used packages, however, since this was from my home computer there were multiples of packages that were not used. The ones listed above were the main ones need in the python backend.
 
 # Personal Notes
   
