@@ -36,7 +36,7 @@ print(response.text)
 data = json.loads(response.text)
 for image in data['data']:
     image = ImgurModel.objects.create(
-        ImageName = image['name'], 
+        ImageName = image['id'], 
         ImageDescription=image['description'], 
         ImageURL=image['link'], 
         ImageFav=image['favorite'])
