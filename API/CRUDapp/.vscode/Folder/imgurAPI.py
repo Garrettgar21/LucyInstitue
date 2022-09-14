@@ -1,7 +1,7 @@
 import requests
 import json
 
-from models import *
+from firstapp.models import ImgurModel
 
 '''
 This is to get the access token
@@ -35,13 +35,9 @@ print(response.text)
 
 data = json.loads(response.text)
 for image in data['data']:
-    print(image['id'])
-    print(image['link'])
-'''
-image = ImgurModel.objects.create(ImageId=image['id'],
-                                ImageName = image['name'],
-                                ImageDescription = image['Description'],
-                                ImageURL=image['link'],
-                                ImageFav=image['favorite'])
-image.save()
-'''
+    image = ImgurModel.objects.create(
+        ImageName = image['name'], 
+        ImageDescription=image['description'], 
+        ImageURL=image['link'], 
+        ImageFav=image['favorite'])
+    image.save()

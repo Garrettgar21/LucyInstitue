@@ -24,7 +24,7 @@ def imgurmodelApi(request,id=0):
         return JsonResponse("Failed to Add",safe=False)
     elif request.method=='PUT':
         imgurmodel_data=JSONParser().parse(request)
-        imgurmodel=imgurmodel.objects.get(ImageId=imgurmodel_data['ImageId'])
+        imgurmodel=ImgurModel.objects.get(ImageId=imgurmodel_data['ImageId'])
         imgurmodel_serializer=ImgurModelSerializer(imgurmodel, data=imgurmodel_data)
         if imgurmodel_serializer.is_valid():
             imgurmodel_serializer.save()

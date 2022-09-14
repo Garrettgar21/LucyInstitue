@@ -254,6 +254,17 @@ methods:{
             }
         })
     }
+    /*,
+    imageUpload(event){
+        let formData=new FormData();
+        formData.append('file',event.target.files[0]);
+        axios.post(
+            variables.API_URL+"imgur/savefile",
+            formData)
+            .then((response)=>{
+                this.PhotoFileName=response.data;
+            });
+    }*/
 
 },
 mounted:function(){
