@@ -11,5 +11,7 @@ class ImgurModel(models.Model):
 
 class User(models.Model):
     UserId = models.AutoField(primary_key=True)
+    Username = models.CharField(max_length=100)
     UserUsername = models.CharField(max_length=100)
     UserPassword = models.CharField(max_length=100)
+    DateOfJoining = models.DateField()

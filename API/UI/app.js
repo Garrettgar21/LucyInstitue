@@ -1,6 +1,6 @@
 const routes=[
     {path:'/home',component:home},
-    {path:'/imgur',component:imgur},
+    {path:'/image',component:image},
     {path:'/user',component:user}
 ]
 
