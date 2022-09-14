@@ -18,7 +18,8 @@ virtualenv==20.16.5
 
 Running <pip freeze> will reveal all the used packages, however, since this was from my home computer there are number packages that were not used. The ones listed above were the main ones need in the python backend.
 
-#Personal Notes
+# Personal Notes
+  
 There is SOOO much more I want to accomplish, but I kept getting blocked by my 3 different installation of python. This exercise truly revealed how important a virtual environment is. 
 
 There is also many functionality things that I wish I would've accomplished in a more timely manner. I got the AUTHENTICATION, and GETs to work for Imgur, however I did not fully complete the PUTs and POSTs as requested by the assignment. I would love to discuss what all I learned and what I would've done differently from the beginning, like using a virtual environment from the start. 
