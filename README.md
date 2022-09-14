@@ -16,7 +16,7 @@ requests==2.22.0
 
 virtualenv==20.16.5
 
-Running <pip freeze> will reveal all the used packages, however, since this was from my home computer there are number packages that were not used. The ones listed above were the main ones need in the python backend.
+Running 'pip freeze' will reveal all the used packages, however, since this was from my home computer there are number packages that were not used. The ones listed above were the main ones need in the python backend.
 
 # Personal Notes
   
