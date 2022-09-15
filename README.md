@@ -24,7 +24,7 @@ You need the packages above. They will also be in the requirements.txt file. You
 
 You may need to run 'set PYTHONPATH=%PYTHONPATH%;C:\path\to\your\project\' to get your interpreters right, but if you are running from venv, you should be good.
 
-# The Other Branch (CRUDapp-without-imgur
+# The Other Branch (CRUDapp-without-Imgur-api)
 
 There is another branch and that is without any API connections. It is just the barebones of the website.
 
