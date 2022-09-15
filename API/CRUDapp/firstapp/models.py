@@ -2,7 +2,10 @@ from pyexpat import model
 from django.db import models
 import requests
 import json
+import os
 import django
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "CRUDapp.settings")
 django.setup()
 
 # Create your models here.
@@ -13,6 +16,7 @@ class ImgurModel(models.Model):
     ImageDescription = models.CharField(max_length=100, null=True)
     ImageURL = models.CharField(max_length=500)
     ImageFav = models.BooleanField(default=False)
+    #ImageField=models.ImageField()
 
 class User(models.Model):
     UserId = models.AutoField(primary_key=True)
@@ -42,9 +46,10 @@ def imgur_api_images():
     for image in data['data']:
         print(image['id'])
         print(image['link'])
-        image = ImgurModel.objects.create(ImageId=image['id'],
-                                ImageName = image['name'],
-                                ImageDescription = image['Description'],
+        image = ImgurModel.objects.create(
+                                ImageName=image['id'],
+                                ImageDescription=image['Description'],
                                 ImageURL=image['link'],
                                 ImageFav=image['favorite'])
         image.save()
+

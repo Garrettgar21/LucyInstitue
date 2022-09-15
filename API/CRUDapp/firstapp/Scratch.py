@@ -1,2 +1,2 @@
 import sys
-print(sys.path)
+sys.path.append('C:\\Users\\garre\\Documents\\GitHub\\LucyInstitue\\API\\CRUDapp')
