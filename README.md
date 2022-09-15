@@ -20,7 +20,9 @@ Running 'pip freeze' will reveal all the used packages, however, since this was 
 
 # To Run The Code (Run the main branch)
 
-You need the packages above. They will also be in the requirements.txt file. You need to run 'python manage.py migrate'. I already created the migration files and now we just need to run the migrations. Then you need to run 'python manage.py runserver'. After that, you can use the HTML file located in API/CRUDapp/UIto navigate the VueJS files I created.
+You need the packages above. They will also be in the requirements.txt file. You need to run 'python manage.py migrate'. I already created the migration files and now we just need to run the migrations. Then you need to run 'python manage.py runserver'. After that, you can use the HTML file, located in API/UI, to navigate the VueJS files I created. 
+
+You may need to run 'set PYTHONPATH=%PYTHONPATH%;C:\path\to\your\project\' to get your interpreters right, but if you are running from venv, you should be good.
 
 # The other branch
 
